@@ -2,7 +2,7 @@
 Este repositório contém o código-fonte de uma landing page para a clínica médica HealNet, desenvolvida com HTML e CSS. O objetivo do projeto é fornecer uma interface moderna, acessível e responsiva para apresentar os serviços da clínica e facilitar o agendamento de consultas.
 ## 🖥️ Visualize o Projeto
 
-🔗 Clique aqui para visualizar o projeto: 
+🔗 Clique aqui para visualizar o projeto: https://isaque-ds.github.io/clinica-healnet/
 
 ## Funcionalidas
 Design moderno e profissional<br>
