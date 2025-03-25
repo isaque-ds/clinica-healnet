@@ -442,6 +442,25 @@ footer {
     font-size: 14px;
 }
 
+/* Menu Hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
 /* Responsividade */
 @media (max-width: 992px) {
 
@@ -473,12 +492,47 @@ footer {
 
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .menu-toggle {
+        order: 3;
+        display: flex;
+        z-index: 101;
     }
 
     .cta-button {
-        margin-top: 20px;
+        display: none;
+        /* Oculta o botão CTA em telas menores */
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--white);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 100;
+        padding: 80px 20px 20px;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 
     .hero-content h1 {
